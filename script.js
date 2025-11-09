@@ -62,7 +62,7 @@ async function think() {
         AGENT_CONFIG.forEach((agent, index) => {
             setTimeout(() => {
                 renderAgentCard(agent, data.agents[agent.key]);
-            }, index * 150);
+            }, index * 1);
         });
 
         // Show final verdict with delay
@@ -71,7 +71,7 @@ async function think() {
             renderFinalVerdict(data.final);
             loading.style.display = "none";
             thinkBtn.disabled = false;
-        }, AGENT_CONFIG.length * 150 + 300);
+        }, AGENT_CONFIG.length * 2 + 0);
 
     } catch (err) {
         console.error("Error:", err);
@@ -216,4 +216,5 @@ document.getElementById("topic").addEventListener("keydown", (e) => {
     }
 
 });
+
 
