@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://polymind-ai.onrender.com/chat";
+const BACKEND_URL = "https://polymind-ai-1.onrender.com/chat";
 
 // Agent configuration with colors
 const AGENT_CONFIG = [
@@ -216,5 +216,6 @@ document.getElementById("topic").addEventListener("keydown", (e) => {
     }
 
 });
+
 
 
